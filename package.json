@@ -1,0 +1,26 @@
+{
+  "name": "otus-elementary",
+  "version": "1.0.0",
+  "description": "Домашняя работа по курсу: JavaScript для начинающих программистов",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitalyKapustin-git/otus-elementary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitalyKapustin-git/otus-elementary/issues"
+  },
+  "homepage": "https://github.com/VitalyKapustin-git/otus-elementary#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}
