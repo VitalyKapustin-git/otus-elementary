@@ -1,5 +1,3 @@
-let arrayOfNums = [2, 5, 435, 3, 0, -2, 94, 2, 23, 97];
-
 let sumOfNums = function(array) {
 	let sum = 0;
 	array.forEach(element => {
@@ -12,7 +10,11 @@ let sumOfNums = function(array) {
 let copyAndIncrease = function(array) {
 	let newArray = [];
 	array.forEach((el, index) => {
-		newArray[index] = el + el;
+		if (el < 0) {
+			newArray[index] = el + el * -1;
+		} else {
+			newArray[index] = el + el;
+		}
 	});
 	console.log("!!" + newArray);
 	return newArray;
@@ -30,9 +32,7 @@ let minAndMax = function(array) {
 		}
 	});
 	console.log("!!!" + min + " " + max);
-	return min, max;
+	return [min, max];
 }
 
-sumOfNums(arrayOfNums);
-copyAndIncrease(arrayOfNums);
-minAndMax(arrayOfNums);
+export { sumOfNums, copyAndIncrease, minAndMax };
