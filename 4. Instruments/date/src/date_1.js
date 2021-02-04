@@ -1,5 +1,5 @@
 export default function getWeekDay() {
-	let [day, month, year] = prompt('Введите ДД.ММ.ГГГГ').split('.');
-	let inputToDate = new Date(year, month, day);
-	return inputToDate.getDay();
+  const [day, month, year] = prompt('Введите ДД.ММ.ГГГГ').split('.');
+  const inputToDate = new Date(year, month, day);
+  return inputToDate.getDay();
 }
