@@ -1,14 +1,14 @@
-let sumOfNums = function(array) {
+const sumOfNums = function(array) {
 	let sum = 0;
 	array.forEach(element => {
 		sum += element;
 	});
-	console.log("!" + sum);
+	console.log(`!${  sum}`);
 	return sum;
 }
 
-let copyAndIncrease = function(array) {
-	let newArray = [];
+const copyAndIncrease = function(array) {
+	const newArray = [];
 	array.forEach((el, index) => {
 		if (el < 0) {
 			newArray[index] = el + el * -1;
@@ -16,11 +16,11 @@ let copyAndIncrease = function(array) {
 			newArray[index] = el + el;
 		}
 	});
-	console.log("!!" + newArray);
+	console.log(`!!${  newArray}`);
 	return newArray;
 }
 
-let minAndMax = function(array) {
+const minAndMax = function(array) {
 	let min = 0;
 	let max = 0;
 	array.forEach((el) => {
@@ -31,8 +31,9 @@ let minAndMax = function(array) {
 			max = el;
 		}
 	});
-	console.log("!!!" + min + " " + max);
+	console.log(`!!!${  min  } ${  max}`);
 	return [min, max];
 }
 
 export { sumOfNums, copyAndIncrease, minAndMax };
+
