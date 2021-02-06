@@ -1,13 +1,11 @@
-function showButton (button) {
-	button.hidden = false;
+export function showButton(button) {
+  button.hidden = false;
 }
 
-function hideButton (button) {
-	button.hidden = true;
+export function hideButton(button) {
+  button.hidden = true;
 }
 
-function checkInput(input, button) {
-	input.value.length !== 0 ? showButton(button) : hideButton(button);
+export function checkInput(input, button) {
+  input.value.length !== 0 ? showButton(button) : hideButton(button);
 }
-
-export { showButton, hideButton, checkInput };
