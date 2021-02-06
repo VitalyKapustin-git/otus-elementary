@@ -5,3 +5,4 @@ export default function checkAngle(a, b, c) {
 		"Прямоугольный треугольник" : 
 		"Не прямоугольный треугольник";
 }
+
