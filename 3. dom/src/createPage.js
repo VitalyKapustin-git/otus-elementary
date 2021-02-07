@@ -1,4 +1,4 @@
-import { showButton, hideButton, checkInput } from './functions.js';
+import { hideButton, checkInput } from './functions.js';
 
 export default function createPage(root) {
   const rootElement = root;
