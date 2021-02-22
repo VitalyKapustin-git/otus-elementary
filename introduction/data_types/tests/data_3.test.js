@@ -1,17 +1,7 @@
 import sumNumElements from "../src/data_3";
 
-// describe('Sum of elements in number', () => {
-// 	test('Expect 123 = 6', () => {
-// 		let origPrompt = window.prompt;
-// 		window.prompt = () => "321";
-// 		expect(sumNumElements()).toBe(6);
-// 		window.prompt = origPrompt;
-// 	});
-// })
 describe("Sum of elements in number", () => {
   test("Return 6 when enter 123", () => {
-    // jest.spyOn - создаю обертку для метода объекта
-    // далее с помощью метода обертки mockFn.mockReturnValue подсовываю нужное значение для возврата
     jest.spyOn(window, "prompt").mockReturnValue("123");
     expect(sumNumElements()).toBe(6);
   });

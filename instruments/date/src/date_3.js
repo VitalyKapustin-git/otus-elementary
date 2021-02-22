@@ -1,4 +1,3 @@
-// DD.MM.YYYY
 export default function getYoungest(user1Data, user2Data) {
   let user1 = user1Data;
   let user2 = user2Data;
