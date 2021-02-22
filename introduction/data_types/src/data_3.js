@@ -1,15 +1,15 @@
 export default function sumNumElements() {
-  let number = prompt('Введите трехзначное число', 123);
+  let number = prompt("Введите трехзначное число", 123);
 
   console.log(`Entered value: ${number}`);
 
-  if (isNaN(Number(number))) {
-    console.log('Not a number');
-    return 'Not a number';
+  if (Number.isNaN(Number(number))) {
+    console.log("Not a number");
+    return "Not a number";
   }
 
-  number = number.split('');
-  if (number[0] === '-') {
+  number = number.split("");
+  if (number[0] === "-") {
     number.shift();
     number[0] = `-${number[0]}`;
   }
@@ -23,7 +23,7 @@ export default function sumNumElements() {
       console.log(userSumResult);
       return userSumResult;
     default:
-      console.log('Length of input > 3 or < 3');
-      return 'Length of input > 3 or < 3';
+      console.log("Length of input > 3 or < 3");
+      return "Length of input > 3 or < 3";
   }
 }

@@ -1,4 +1,3 @@
-import createPage from './createPage.js';
+import createPage from "./createPage";
 
-createPage(document.querySelector('#root'));
-
+createPage(document.querySelector("#root"));

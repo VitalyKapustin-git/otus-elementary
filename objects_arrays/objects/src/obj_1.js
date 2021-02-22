@@ -1,12 +1,12 @@
-let user = {
-	name: 'John',
-}
+const user = {
+  name: "John",
+};
 
-user.age = prompt('Введите возраст');
+user.age = prompt("Введите возраст");
 
-let admin = Object.assign({}, user);
+const admin = { ...user };
 
-admin.role = 'admin';
+admin.role = "admin";
 
-let {name, age, role} = admin;
+const { name, age, role } = admin;
 console.log(name, age, role);

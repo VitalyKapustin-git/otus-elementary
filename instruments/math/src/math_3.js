@@ -1,8 +1,8 @@
 export default function sqrtFn() {
-  const userInput = prompt('Введите а, b и c в формате a,b,c').split(',');
+  const userInput = prompt("Введите а, b и c в формате a,b,c").split(",");
   const [a, b, c] = userInput;
 
-  const d = Math.pow(b, 2) - 4 * a * c;
+  const d = b ** 2 - 4 * a * c;
 
   if (d > 0) {
     const x1 = (-b + Math.sqrt(d)) / (2 * a);
@@ -12,5 +12,5 @@ export default function sqrtFn() {
   if (d === 0) {
     return `${-b / (2 * a)}`;
   }
-  return 'Корней нет';
+  return "Корней нет";
 }
