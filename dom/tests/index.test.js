@@ -19,6 +19,8 @@ it("Check elements in .textAreaBlockElement", () => {
 
 it("Check if on button click add my value in .textAreaBlockElement", () => {
   el.querySelector(".inputElement").value = "testValue";
+  el.querySelector(".inputElement").dispatchEvent(new Event('input'));
+  expect(el.querySelector(".buttonElement").hidden).toBe(false);
   el.querySelector(".buttonElement").click();
   expect(
     el.querySelector(".textAreaBlockElement").childNodes[3].innerText
