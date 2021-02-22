@@ -2,9 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    "jest/globals": true,
+    'jest/globals': true,
   },
-  plugins: ["jest"],
+  plugins: ['jest'],
   extends: [
     'airbnb-base',
     'prettier',
@@ -14,9 +14,13 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'import/prefer-default-export': 'off',
+    "import/prefer-default-export": "off",
     'max-len': ['error', { ignoreComments: true }],
-    'no-restricted-properties': 'off',
-    'no-useless-escape': 'off',
+    "no-unused-vars": "off",
+    "import/extensions": "off",
+    "no-plusplus": "off",
+    "no-lone-blocks": "off",
+    "no-unused-expressions": "off",
+    "no-param-reassign": "off",
   },
 };
