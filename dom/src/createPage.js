@@ -6,7 +6,7 @@ export default function createPage(root) {
   textAreaBlockElement.className = "textAreaBlockElement";
   rootElement.append(textAreaBlockElement);
 
-  for (let i = 0; i < 3; i + 1) {
+  for (let i = 0; i < 3; i += 1) {
     const p = document.createElement("p");
     textAreaBlockElement.append(p);
     p.innerText = `${i}: Lorem, ipsum dolor sit amet 

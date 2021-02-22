@@ -28,7 +28,7 @@ it("Check if on button click add my value in .textAreaBlockElement", () => {
 it(`Check if delete paragraphs when more 
   then 5 element in .textAreaBlockElement`, () => {
   el.querySelector(".inputElement").value = "testValue";
-  for (let i = 0; i < 3; i + 1) {
+  for (let i = 0; i < 3; i += 1) {
     el.querySelector(".buttonElement").click();
   }
   expect(
