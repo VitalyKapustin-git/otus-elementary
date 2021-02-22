@@ -15,7 +15,7 @@ module.exports = {
   },
   rules: {
     "import/prefer-default-export": "off",
-    "max-len": "off",
+    'max-len': ['error', { ignoreComments: true }],
     "no-unused-vars": "off",
     "import/extensions": "off",
     "no-plusplus": "off",
