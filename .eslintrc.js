@@ -15,6 +15,12 @@ module.exports = {
   },
   rules: {
     "import/prefer-default-export": "off",
-    "max-len": ["error", { ignoreComments: true }],
+    "max-len": "off",
+    "no-unused-vars": "off",
+    "import/extensions": "off",
+    "no-plusplus": "off",
+    "no-lone-blocks": "off",
+    "no-unused-expressions": "off",
+    "no-param-reassign": "off",
   },
 };
